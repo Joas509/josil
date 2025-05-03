@@ -1,0 +1,160 @@
+
+/* Style du menu fixe */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#4CAF50 ;
+    color: orange;
+    padding: 10px 20px;
+    text-align: center;
+    z-index: 1000;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Style de la section principale */
+.main-section {
+    margin-top: 70px; /* Pour éviter que le contenu soit caché sous le menu fixe */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-section img {
+    float: left;
+    margin-right: 20px;
+    width: 40%;
+    max-width: 400px;
+}
+
+.main-section .content {
+    flex: 1;
+}
+
+/* Formulaire positionné relativement */
+.form-container {
+    position: relative;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.form-container input, .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+}
+
+/* Style du footer */
+footer {
+  
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    color: orange;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+/* Style de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;  /* Utilisation d'une police lisible */
+    background-color: #f4f4f4;      /* Fond gris clair */
+    margin: 0;
+    padding: 0;
+    color: #333;                     /* Couleur du texte */
+}
+
+/* Style pour la section principale */
+.content {
+    width: 80%;
+    max-width: 900px;                /* Largeur maximale pour éviter d'être trop large */
+    margin: 40px auto;               /* Centrage horizontal avec un espacement vertical */
+    padding: 20px;
+    background-color: #fff;          /* Fond blanc pour la section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre discrète pour un effet de profondeur */
+    border-radius: 8px;              /* Coins arrondis */
+}
+
+/* Style pour le titre principal */
+h1 {
+    font-size: 2.5em;                /* Taille du texte du titre */
+    color: #4CAF50;                  /* Couleur verte pour le titre */
+    text-align: center;              /* Centrer le titre */
+    margin-bottom: 20px;
+}
+
+/* Style pour les sous-titres (h2) */
+h2 {
+    font-size: 1.8em;                /* Taille du texte des sous-titres */
+    color: #333;                     /* Couleur gris foncé pour les sous-titres */
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Style pour les paragraphes */
+p {
+    font-size: 1.1em;                /* Taille de texte agréable à lire */
+    line-height: 1.6;                /* Espacement entre les lignes pour améliorer la lisibilité */
+    margin-bottom: 15px;             /* Espacement sous chaque paragraphe */
+}
+
+/* Style des liens */
+a {
+    color: #4CAF50;                  /* Couleur verte pour les liens */
+    text-decoration: none;           /* Retirer le soulignement */
+}
+
+a:hover {
+    text-decoration: underline;      /* Souligner le lien au survol */
+}
+
+/* Style des titres de section */
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+/* Style des listes (si besoin) */
+ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Médias queries pour rendre la page responsive */
+@media (max-width: 768px) {
+    .content {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
